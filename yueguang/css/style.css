@@ -108,16 +108,16 @@ html{
     font-weight:bold;
 }
 /****活动规则*****/
-.wrap_page .rules>p{
+.wrap_page .rules>div{
     padding-left:15px;
     padding-right:15px;
     color:#d2d2d2;
-    /*line-height:24px;*/
+    line-height:26px;
 }
 .wrap_page .rules .img{
     margin:0 auto;
 }
-.wrap_page .rules>p span{
+.wrap_page .rules>div span{
     font-weight:bold;
     color:#cccccc;
 }
