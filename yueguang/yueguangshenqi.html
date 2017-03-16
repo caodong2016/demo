@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>月光神器</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="wrap_page">
+        <div class="top_banner">
+            <img src="images/banner_bg.png" class="img img-responsive" alt=""/>
+            <div class="active_explain">
+                <p>活动时间：2017-03-15~2017-04-01</p>
+                <a href="#rules">活动规则</a>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_banner">
+                <img src="images/banner_footer.png" class="img img-responsive" alt=""/>
+                <div class="active_ticket">
+                    <div class="ticket_box">
+                        <p class="fontColor_e73265">100%免息券</p>
+                        <div>全场通用</div>
+                        <a type="button" href="ticket_success.html" class="btn ticket_btn">立即领取</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 活动规则-->
+        <div class="rules">
+            <img id="rules" src="images/rules.png" class="img img-responsive" alt=""/>
+            <p><span>参与用户：</span>所有申请月光神器的客户。</p>
+            <p><span>卡券内容：</span>在活动期间，申请借款成功的客户可享受最多免30天利息和居间费用。</p>
+            <p><span>劵有效期：</span>活动开始之日起1个月。</p>
+            <p><span>使用方法：</span>在活动时间内成功申请贷款，并在“确认信息”界面选择并使用优惠券即可获得优惠。</p>
+            <p>本次活动在法律许可范围内，最终解释权由赫美微贷所有。如有疑问，可通过公众号咨询客服人员。</p>
+        </div>
+    </div>
+    <div class="hotLine">
+        <div>客服热线：400-809-0040</div>
+    </div>
+    <!-- 活动弹窗-->
+    <!-- <div class="modal fade activeModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">活动规则</h4>
+                </div>
+                <div class="modal-body">
+                    <p>活动期间每位客户成功登陆后，均可得到一张“<span class="fontColor">100%免息券</span>”</p>
+                    <p>活动时间：</p>
+                    <p>2017年X月XX日—2017年X+1月XX日</p>
+                    <p>使用方法：</p>
+                    <p>客户在活动期间打开月光神器，即可获得一张“100%免息券”。在活动时间范围内成功申请贷款，并在“确认信息”界面可选择并使用优惠券即可获得优惠。</p>
+                    <p>本次活动在法律许可范围内，最终解释权由赫美微贷所有。如有疑问，可通过公众号咨询客服人员。</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        //设置模态框垂直居中函数
+        function centerModals(){
+            $('.modal').each(function(i){
+                var $clone = $(this).clone().css('display', 'block').appendTo('body');
+                var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);
+                top = top > 20 ? top : 0;
+                $clone.remove();
+                $(this).find('.modal-content').css("margin-top", top-20);
+            });
+        }
+        // 在模态框出现的时候调用垂直居中函数
+        $(window).on('resize', centerModals);
+        // 在窗口大小改变的时候调用垂直居中函数
+        $('.modal').on('show.bs.modal', centerModals);
+    </script>
+</body>
+</html>

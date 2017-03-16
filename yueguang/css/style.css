@@ -1,0 +1,172 @@
+/**定义通用样式**/
+html{
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    font-family:Microsoft YaHei;
+    height:100%;
+    font-size:14px;
+    background:#301851;
+}
+.fontColor{
+    color:#f36060;
+}
+.fontColor_e73265{
+    color:#e73265;
+}
+.fontColor_333{
+    color:#333;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    visibility:hidden;
+    height:0;
+    clear:both;
+}
+.wrap_page{
+    max-width:750px;
+    margin:0 auto;
+    padding-bottom:10px;
+    background:#301851;
+}
+.wrap_page .top_banner{
+    position:relative;
+}
+.wrap_page .top_banner .active_explain{
+    width:100%;
+    position:absolute;
+    bottom:20px;
+    text-align: center;
+}
+.wrap_page .top_banner .active_explain p{
+    color:#fff;
+    font-weight:bold;
+}
+.wrap_page .top_banner .active_explain a{
+    color:#fff;
+    display:inline-block;
+    text-decoration: underline;
+}
+.wrap_page .footer_bg{
+    position:relative;
+    background:#301851;
+}
+.wrap_page .footer_bg .footer_banner{
+    width:80%;
+    margin:0 auto;
+}
+.wrap_page .footer_bg .active_ticket{
+    text-align: center;
+    position:absolute;
+    top:56px;
+    width:80%;
+}
+.wrap_page .footer_bg .active_ticket .ticket_box{
+    margin:0 auto;
+}
+.wrap_page .footer_bg .active_ticket .ticket_box>p{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:35px;
+}
+.wrap_page .footer_bg .active_ticket .ticket_box>div{
+    font-size:15px;
+    color:#333;
+    margin-bottom:20px;
+}
+.wrap_page .footer_bg .active_ticket .ticket_box .ticket_btn{
+    background:#e73265;
+    color:#fff;
+    font-weight:bold;
+    font-size:15px;
+}
+.hotLine{
+    /*position:fixed;*/
+    /*bottom:5px;*/
+    width:100%;
+    margin-bottom:10px;
+}
+.hotLine div{
+    max-width:750px;
+    margin:0 auto;
+    text-align: center;
+    background:#301851;
+    color:#837497;
+}
+/******活动模态框********/
+.activeModal .modal-dialog{
+    width:80%;
+    margin:0 auto;
+}
+.activeModal .modal-content{
+    padding:5px 5px;
+}
+.activeModal .modal-content .modal-header{
+    border-bottom:1px solid #666;
+    text-align: center;
+}
+.activeModal .modal-content .modal-body p>span{
+    font-weight:bold;
+}
+/****活动规则*****/
+.wrap_page .rules>p{
+    padding-left:15px;
+    padding-right:15px;
+    color:#d2d2d2;
+    line-height:24px;
+}
+.wrap_page .rules .img{
+    margin:0 auto;
+}
+.wrap_page .rules>p span{
+    font-weight:bold;
+    color:#cccccc;
+}
+@media only screen and (min-width:320px){
+    .wrap_page .footer_bg .active_ticket {
+        position: absolute;
+        top: 45px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>p {
+        margin-bottom: 25px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>div {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width:360px){
+    .wrap_page .footer_bg .active_ticket {
+        position: absolute;
+        top: 56px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>p {
+        margin-bottom: 35px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>div {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width:410px){
+    .wrap_page .footer_bg .active_ticket {
+        position: absolute;
+        top: 62px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>p {
+        margin-bottom: 45px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>div {
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (min-width:750px){
+    .wrap_page .footer_bg .active_ticket {
+        position: absolute;
+        top: 118px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>p {
+        margin-bottom: 80px;
+    }
+    .wrap_page .footer_bg .active_ticket .ticket_box>div {
+        margin-bottom: 35px;
+    }
+}
