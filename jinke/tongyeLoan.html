@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>同业贷</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="dk-box">同业贷产品选择：</div>
+        <div class="dk-class">
+            <button data-toggle="modal" data-target="#bdRequery" class="dk-bomb">
+                <ul class="media-list" >
+                    <li class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="images/tongye/tongye01.jpg" alt="" />
+                            <div class="media-bg media-bg-13"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">保单贷</h4>
+                            <div class="colors-font">房主 按揭贷 20-60岁</div>
+                        </div>
+                        <span class="media-right glyphicon glyphicon-menu-right" ></span>
+                    </li>
+                </ul>
+            </button>
+            <div class="line"></div>
+            <button data-toggle="modal" data-target="#kjdRequery" class="dk-bomb">
+                <ul class="media-list" >
+                    <li class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="images/tongye/tongye02.jpg" alt="" />
+                            <div class="media-bg media-bg-14"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">快捷贷</h4>
+                            <div class="colors-font">上班族 20-60岁 有社保</div>
+                        </div>
+                        <span class="media-right glyphicon glyphicon-menu-right"></span>
+                    </li>
+                </ul>
+            </button>
+        </div>
+    </div>
+    <div class="myContent-box modal fade"  id="bdRequery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="dkRequery">贷款要求</div>
+                <div class="dkContent">
+                    <div class="require">1.年龄要求：22-55周岁</div>
+                    <div class="require">2.现工作年限：在本地当前工作单位满半年以上，无工作者不可申请</div>
+                    <div class="require">3.社保要求：客户进件保单须为寿险保单（保险公司为平安、太平、太平洋、泰康、人保寿（PICC）、中国人寿、新华保险）</div>
+                    <div class="require">4.保单当前状态只能为有效，其中缴费期间不能中断投保，不能有复效、垫付保费等情况。保单投保人和缴费方式近一年内未发生变更</div>
+                    <div class="require">5.缴费方式不为趸缴，必须为正常缴费状态，且月缴费大于等于200元或年缴费大于等于2400元（趸缴，即一次性付清所有保费）</div>
+                    <div class="require">6.年交保费够2年交满3期（寿险保单年限≥5年），生效日期≥6个月</div>
+                    <div class="require">7.最多只接受申请人的2份保单</div>
+                    <h4>提供资料：</h4>
+                    <div class="data-prove">1.身份证明</div>
+                    <div class="data-prove">2.保单原件/保单截图（需提前准备好保单网上登录密码和账号）</div>
+                    <div class="approve">批核时间：最快1个工作日</div>
+                    <div>申请贷款请确认所在城市有我司分公司</div>
+                </div>
+                <div class="dkfooter">
+                    <div class="colors dismiss-left" data-dismiss="modal">取消</div>
+                    <div class="colors" data-dismiss="modal" data-miss="continue">继续</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myContent-box modal fade"  id="kjdRequery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="dkRequery">贷款要求</div>
+                <div class="dkContent">
+                    <div class="require">1.年龄要求：18-55周岁</div>
+                    <div class="require">2.同业还款当期无逾期、近三期最长一期逾期天数小于等于5天</div>
+                    <div class="require">3.非我司慎贷行业、非我司限制性职位</div>
+                    <div class="require">4.公司股权或房产不能抵押在担保公司、小贷公司、典当行及个人</div>
+                    <div class="require">5.中安老板贷不符合我司营业执照要求，需提供中安考察报告后可以按自雇快捷贷进件</div>
+                    <h4>提供资料：</h4>
+                    <div class="data-prove">1.身份证明</div>
+                    <div class="data-prove">2.自雇（老板）：同业贷款合同及放还款流水（近 3 个月内的合同，贷款金额≥4 万）+ 企业资料 +收入证明</div>
+                    <div class="data-prove">3.受薪（上班）：同业贷款合同及提供至少 3 期还款流水（还款三期及以上的合同，同业贷款金额≥4 万</div>
+                    <div class="data-prove">4.同行签约合同（中安、平安易贷/平安银行、亚联财、陆金所</div>
+                    <div class="approve">批核时间：最快1个工作日</div>
+                    <div>申请贷款请确认所在城市有我司分公司</div>
+                </div>
+                <div class="dkfooter">
+                    <div class="colors dismiss-left" data-dismiss="modal">取消</div>
+                    <div class="colors" data-dismiss="modal" data-miss="continue">继续</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            //模态框设置
+            $('[role="dialog"]').modal({
+                show: false,
+                backdrop: 'static'
+            });
+            function centerModals(){
+                $('.modal').each(function(i){
+                    var $clone = $(this).clone().css('display', 'block').appendTo('body');
+                    var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);
+                    top = top > 50 ? top : 0;
+                    $clone.remove();
+                    $(this).find('.modal-content').css("margin-top", top);
+                });
+            }
+            // 在模态框出现的时候调用垂直居中函数
+            $(window).on('resize', centerModals);
+            // 在窗口大小改变的时候调用垂直居中函数
+            $('.modal').on('show.bs.modal', centerModals);
+
+            /*******点击继续按钮跳转*******/
+            $('[data-miss="continue"]').click(function(){
+                window.location.href="applyInfo.html";
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>资质评测</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div id="content" class="aptitudeEvaluat">
+        <div class="pingce-title bg-color">
+            <div class="colors">为了提供优质的服务，快捷的审批以及高额的贷款,</div>
+            <div class="colors">请如实填写以下信息</div>
+        </div>
+        <div class="zizhi-box">资质评测：
+            <small class="colors-font">(零等待，即刻获取结果)</small>
+        </div>
+       <div class="apply-info bg-color">
+           <div class="apply-sum apply-box">
+               <div class="pull-left">姓名</div>
+               <div class="pull-right inputs-box">
+                    <input type="text" placeholder="请输入贷款人真实姓名"/>
+               </div>
+           </div>
+           <div class="apply-time apply-box">
+               <div class="pull-left">身份证号</div>
+               <div class="pull-right inputs-box">
+                   <input type="text" placeholder="请输入贷款人身份证号"/>
+               </div>
+           </div>
+           <div class="apply-purpose apply-box">
+               <div class="pull-left">手机</div>
+               <div class="pull-right inputs-box">
+                   <input type="text" placeholder="请输入贷款人手机号码"/>
+               </div>
+           </div>
+       </div>
+       <div class="pingce-btn common-btn">
+            <button type="button" class="btn btn-my01" id="text">评&nbsp;&nbsp;测</button>
+       </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('#text').click(function(){
+            /********评测成功加载*******/
+            window.location.href="评测结果-success.html";
+            /********评测失败加载*******/
+            //window.location.href="评测结果-fail.html";
+        })
+    })
+</script>
+</html>

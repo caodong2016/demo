@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>申请信息</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" href="css/mui.picker.min.css"/>
+    <link rel="stylesheet" href="css/mui.poppicker.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.picker.min.js"></script>
+    <script src="js/mui.poppicker.js"></script>
+</head>
+<body>
+    <div id="content">
+       <div class="apply-info bg-color">
+           <div class="apply-sum apply-box colors-font">
+                可贷款金额
+                <input class="pull-right pulls" placeholder="1到20W之间"/>
+           </div>
+           <div class="apply-time apply-box colors-font" id='showUserPicker'>
+               期数
+               <span class="glyphicon glyphicon-menu-right  choose-icon pull-right" ></span>
+               <div id='userResult' class="pull-right">请选择</div>
+           </div>
+           <div class="apply-purpose apply-box colors-font" id="purposeBtn">
+               借款用途
+               <span class="glyphicon glyphicon-menu-right choose-icon pull-right"></span>
+               <div id='purposeChoose' class="pull-right">请选择</div>
+           </div>
+           <div class="apply-customer apply-box colors-font" id="customerBtn">
+               客户类型
+               <span class="glyphicon glyphicon-menu-right choose-icon pull-right"></span>
+               <div  id='customerChoose' class="pull-right">请选择</div>
+           </div>
+       </div>
+       <div class="apply-btn common-btn">
+            <button type="button" class="btn btn-my01" id="submit-apply">提交申请</button>
+       </div>
+    </div>
+    <script>
+        (function($, doc) {
+            $.init();
+            $.ready(function() {
+                /*******贷款期数****/
+                var userPicker = new $.PopPicker();
+                userPicker.setData([
+                    {text: '3个月'},
+                    {text: '6个月'},
+                    {text: '12个月'},
+                    {text: '18个月'},
+                    {text: '24个月'},
+                    {text: '36个月'}
+                ]);
+                var showUserPickerButton = doc.getElementById('showUserPicker');
+                var userResult = doc.getElementById('userResult');
+                showUserPickerButton.addEventListener('tap', function(event) {
+                    userPicker.show(function(items) {
+                        userResult.innerText =items[0].text;
+                        //返回 false 可以阻止选择框的关闭
+                        //return false;
+                    });
+                }, false);
+                /*****借款用途******/
+                var purposePicker = new $.PopPicker();
+                purposePicker.setData([
+                    {text: '医疗'},
+                    {text: '教育'},
+                    {text: '培训进修'},
+                    {text: '珠宝'},
+                    {text: '美容'},
+                    {text: '婚庆'},
+                    {text: '旅游'}
+                ]);
+                var purposeBtn = doc.getElementById('purposeBtn');
+                var purposeChoose = doc.getElementById('purposeChoose');
+                purposeBtn.addEventListener('tap', function(event) {
+                    purposePicker.show(function(items) {
+                        purposeChoose.innerText =items[0].text;
+                        //返回 false 可以阻止选择框的关闭
+                        //return false;
+                    });
+                }, false);
+                /****客户类型***/
+                var customerPicker = new $.PopPicker();
+                customerPicker.setData([
+                    {text: '个人'},
+                    {text: '企业'}
+                ]);
+                var customerBtn = doc.getElementById('customerBtn');
+                var customerChoose = doc.getElementById('customerChoose');
+                customerBtn.addEventListener('tap', function(event) {
+                    customerPicker.show(function(items) {
+                        customerChoose.innerText =items[0].text;
+                        //返回 false 可以阻止选择框的关闭
+                        //return false;
+                    });
+                }, false);
+            });
+        })(mui, document);
+        $(function(){
+            /*******测试获取当前选择的值*****/
+            $('.btn').click(function(){
+                var val=$('#userResult').html();
+                console.log(val);
+            });
+            /*******点击提交申请跳转*****/
+            $('#submit-apply').click(function(){
+                window.location.href="aptitudeEvaluat.html";
+            })
+        })
+    </script>
+</body>
+</html>
