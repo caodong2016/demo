@@ -665,6 +665,9 @@ input{font-family:Microsoft YaHei;-webkit-appearance:none; resize:none; border-r
 #content .apply-info .apply-time{
 	border-bottom:1px solid #e4e4e4;
 }
+#content .apply-info .apply-purpose{
+    border-bottom:1px solid #e4e4e4;
+}
 #content .apply-info .apply-box{
     height:60px;
     padding-top:20px;
