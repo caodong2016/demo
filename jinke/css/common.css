@@ -671,7 +671,7 @@ input{font-family:Microsoft YaHei;-webkit-appearance:none; resize:none; border-r
     padding-bottom:20px;
     position:relative;
     padding-left:15px;
- 	/*padding-right:15px;*/
+ 	padding-right:15px;
 }
 #content .apply-info .apply-box{
     font-size:1rem !important;
@@ -729,18 +729,12 @@ input{font-family:Microsoft YaHei;-webkit-appearance:none; resize:none; border-r
 }
 #content .inputs-box{
     width:150px;
-    margin-right:5px !important;
+    margin-right:0 !important;
 }
 #content .inputs-box input{
     width:100%;
     text-align:right;
-    padding-right:10px;
 }
-/*.aptitudeEvaluat .inputs-box input{
-    width:100%;
-    text-align:right;
-    padding-right:0;
-}*/
 /****贷款要求，弹出层****/
 .myContent-box .dkRequery{
     text-align: center;
