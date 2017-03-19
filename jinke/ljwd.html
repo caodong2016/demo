@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/jisujiaodan.css"><!--新增引入 -->
     <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/waves.css">
     <link href="css/swiper-3.3.1.min.css" rel="stylesheet"/>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/swiper-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script><!--新增引入 -->
+    <script src="js/waves.min.js"></script>
 </head>
 <body>
     <div id="content">
@@ -33,7 +35,7 @@
     </div>
     <div class="dk-box">根据贷款人情况选择下列分类：</div>
     <div class="dk-class">
-        <ul class="media-list list-active" id="jisu">
+        <ul class="media-list waves-effect waves-button" id="jisu">
             <li class="media">
                 <div class="media-left">
                     <img class="media-object" src="images/jisu.png" alt="" />
@@ -48,7 +50,7 @@
             </li>
         </ul>
         <div class="line"></div>
-        <ul class="media-list list-active"  data-toggle="modal" data-target="#zyjdModal">
+        <ul class="media-list waves-effect waves-button"  data-toggle="modal" data-target="#zyjdModal">
             <li class="media">
                 <div class="media-left">
                     <img class="media-object" src="images/zhuanye.png" alt="" />
@@ -70,19 +72,19 @@
     <!-- 底部导航栏-->
     <div class="tabbar-footer">
         <div class="tab-bar">
-            <a href="" class="colors">
+            <a href="" class="colors waves-effect waves-button">
                 <i class="icon iconfont">&#xe6a2;</i>
                 <span>快速交单</span>
             </a>
-            <a href="progressSearch.html">
+            <a href="progressSearch.html" class="waves-effect waves-button">
                 <i class="icon iconfont">&#xe69b;</i>
                 <span>进度查询</span>
             </a>
-            <a href="commissionSearch.html">
+            <a href="commissionSearch.html" class="waves-effect waves-button">
                 <i class="icon iconfont">&#xe600;</i>
                 <span>我的佣金</span>
             </a>
-            <a href="personCenter.html">
+            <a href="personCenter.html" class="waves-effect waves-button">
                 <i class="icon iconfont">&#xe6ab;</i>
                 <span>个人中心</span>
             </a>
@@ -175,5 +177,7 @@
         grabCursor: true,    //鼠标放上时变成手的形状
         autoHeight:true
     });
+    /***点击水波效果****/
+    Waves.displayEffect();
 </script>
 </html>

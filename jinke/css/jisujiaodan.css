@@ -285,7 +285,3 @@ body{
         margin-top:10px;
     }
 }
-/*****列表添加点击样式******/
-.list-active:active{
-    background:#ECECEC;
-}
