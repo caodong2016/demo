@@ -1,0 +1,65 @@
+.majorModal .modal-dialog .modal-content {
+    position: relative;
+    background-color: transparent; 
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none; 
+    border-radius:0; 
+    outline: 0;
+    -webkit-box-shadow: none; 
+    box-shadow:none; 
+}
+.majorModal .modal-dialog .modal-content .img-bg .img{
+    margin:0 auto;
+}
+.majorModal .modal-dialog .modal-content .btn-box{
+    position:absolute;
+    bottom:-40px;
+    width:100%;
+    text-align:center;
+}
+.majorModal .modal-dialog .modal-content .btn-box .btn-define{
+    background:#fed453;
+    color:#7d1b1b;
+    font-size:18px;
+    font-weight: bold;
+}
+.majorModal .modal-dialog .modal-content .btn-box .close-btn{
+    margin-top:50px;
+}
+@media only screen and (min-width:320px){
+    .majorModal .modal-dialog .modal-content .btn-box{
+        position:absolute;
+        bottom:-46px;
+    }
+     .majorModal .modal-dialog .modal-content .btn-box .close-btn{
+        margin-top:50px;
+    }
+}
+@media only screen and (min-width:360px){
+    .majorModal .modal-dialog .modal-content .btn-box{
+        position:absolute;
+        bottom:-40px;
+    }
+     .majorModal .modal-dialog .modal-content .btn-box .close-btn{
+        margin-top:50px;
+    }
+}
+@media only screen and (min-width:410px){
+    .majorModal .modal-dialog .modal-content .btn-box{
+        position:absolute;
+        bottom:-40px;
+    }
+     .majorModal .modal-dialog .modal-content .btn-box .close-btn{
+        margin-top:60px;
+    }
+}
+@media only screen and (min-width:750px){
+    .majorModal .modal-dialog .modal-content .btn-box{
+        position:absolute;
+        bottom:-55px;
+    }
+     .majorModal .modal-dialog .modal-content .btn-box .close-btn{
+        margin-top:95px;
+    }
+}

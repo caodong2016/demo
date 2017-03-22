@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>活动页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <button data-toggle="modal" data-target="#myModal">点击</button>
+    <div class="majorModal modal fade"  id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" id="tongye" role="document">
+            <div class="modal-content">
+                <div class="img-bg">
+                    <img src="images/active.png" class="img img-responsive" alt="" />
+                </div>
+                <div class="btn-box">
+                    <button class="btn btn-define">立即领券</button>
+                     <div class="close-btn" data-dismiss="modal" aria-label="Close">
+                        <img src="images/close.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //设置模态框垂直居中函数
+    function centerModals(){
+        $('.modal').each(function(i){
+            var $clone = $(this).clone().css('display', 'block').appendTo('body');
+            var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);
+            top = top > 20 ? top : 0;
+            $clone.remove();
+            $(this).find('.modal-content').css("margin-top", top-20);
+        });
+    }
+    // 在模态框出现的时候调用垂直居中函数
+    $(window).on('resize', centerModals);
+    // 在窗口大小改变的时候调用垂直居中函数
+    $('.modal').on('show.bs.modal', centerModals);
+</script>
+</html>
