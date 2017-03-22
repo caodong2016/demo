@@ -27,6 +27,10 @@
 .majorModal .modal-dialog .modal-content .btn-box .close-btn{
     margin-top:50px;
 }
+.majorModal .modal-dialog .modal-content .btn-box .close-btn img{
+    width:28px;
+    height:28px;
+}
 @media only screen and (min-width:320px){
     .majorModal .modal-dialog .modal-content .btn-box{
         position:absolute;
