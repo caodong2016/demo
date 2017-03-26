@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="../../wp-content/themes/hemeiweidai/css/bootstrap.min.css" tppabs="http://www.hemeiloan.com/wp-content/themes/hemeiweidai/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../../wp-content/themes/hemeiweidai/css/style.css" tppabs="http://www.hemeiloan.com/wp-content/themes/hemeiweidai/css/style.css"/>
 	<script src="../../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js" tppabs="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=0d10316ecd4df503ffdb5ff018bdd256"></script>
 	<script language="javascript" type="text/javascript"> 
 	var domain = document.domain;
 	if(domain=="jrlxedk.com" || domain == "www.jrlxedk.com"){
@@ -108,7 +109,8 @@ if(browser.versions.mobile||browser.versions.android||browser.versions.ios){ win
 					<h3>联系我们</h3>
 				</div>
 				<div class="row">
-					<img src="../../wp-content/themes/hemeiweidai/images/contact-map.jpg" tppabs="http://www.hemeiloan.com/wp-content/themes/hemeiweidai/images/contact-map.jpg" class="map"  width="1060px" height="452px"/>
+<!-- 					<img src="../../wp-content/themes/hemeiweidai/images/contact-map.jpg" tppabs="http://www.hemeiloan.com/wp-content/themes/hemeiweidai/images/contact-map.jpg" class="map"  width="1060px" height="452px"/> -->
+					<div class="our_map" id="container"></div>
 					<h3>公司地址</h3>
 					<p>办公地点：深圳市福田区车公庙安华工业区4栋7层 <br />
 						邮编：518000<br />
@@ -142,5 +144,26 @@ var obj=document.getElementById("AdLayer"); //position:fixed对象
 window.onscroll=function(){obj.style.top=(document.body.scrollTop||document.documentElement.scrollTop)+n+'px';}
 window.onresize=function(){obj.style.top=(document.body.scrollTop||document.documentElement.scrollTop)+n+'px';}
 }
+	</script>
+	<script>
+	    $(function() {
+		/*********创建地图***********/
+		var map = new AMap.Map('container', {
+		    resizeEnable: true,
+		    center: [114.026784,22.531292],
+		    zoom: 15
+		});
+		var marker = new AMap.Marker({
+		    position: map.getCenter()
+		});
+		marker.setMap(map);
+		// 设置鼠标划过点标记显示的文字提示
+		marker.setTitle('深圳市福田区车公庙安华工业区4栋7层 ');
+		// 设置label标签,label默认蓝框白底左上角显示，样式className为：amap-marker-label
+		marker.setLabel({
+		    offset: new AMap.Pixel(20, 35),//修改label相对于maker的位置
+		    content: '<span class="text-center">地址:深圳市福田区车公庙安华工业区4栋7层</span>'
+		});
+	    });
 	</script>
 </html>
