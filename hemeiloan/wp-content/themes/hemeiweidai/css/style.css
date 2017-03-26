@@ -1013,3 +1013,8 @@ a{
 	-moz-animation: left .4s linear 0s normal none;
 	-webkit-animation: left .4s linear 0s normal none;
 }
+/***地图展示****/
+.our_map{
+	width:1060px;
+	height:452px;
+}
